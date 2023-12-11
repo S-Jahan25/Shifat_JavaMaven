@@ -38,6 +38,7 @@ public class ShifatsBio {  // class name // class name ShifatsBio.
         System.out.println("How much balance you have in the card?");
         float userInput = scan.nextFloat();
         System.out.println("Your balance is "+userInput);
+        System.out.println("My name is Shifat Jahan");
 
 
     }
