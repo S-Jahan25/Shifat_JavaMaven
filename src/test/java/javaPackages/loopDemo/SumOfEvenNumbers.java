@@ -16,6 +16,7 @@ public class SumOfEvenNumbers {  // class name
             //  System.out.println(sum); // if I print here it will giving 1 by 1
         }
         System.out.println(sum); // if I print after the loop here it will give me just sum.
+        System.out.println("thats my total sum");
 
 
 

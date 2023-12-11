@@ -28,10 +28,10 @@ public class ScannerPractice {  // class name
         //  scan.nextFloat(): // taking input from user decimal  value
         int total = a+b;
         System.out.println("The total of a+b is = "+ total);
-<<<<<<< HEAD
+
         System.out.println("My Daughter name is Aaliyahout ");
-=======
-        System.out.println("Aaliyah");master
+
+        System.out.println("Aaliyah");
 
     }
 
