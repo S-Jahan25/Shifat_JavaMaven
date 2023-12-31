@@ -6,4 +6,6 @@ public class DogFirstSubClass extends AnimalSupperClass{
          System.out.println("Dog is eating");
 
     }
+
+
 }

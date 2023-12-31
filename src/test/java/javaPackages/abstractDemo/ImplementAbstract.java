@@ -1,7 +1,9 @@
 package javaPackages.abstractDemo;
 
-public class AbstractB extends AbstractASupperClass { // This is child class and extrends from supper class
+public class ImplementAbstract extends AbstractASupperClass { // This is child class and extrends from supper class
     /*
+    THis is a regular class , which is doing the implementation but its supper class is abstract.
+    * In the Abstract supper class should be abstract and whoever implement should be regular.
        If supper class has more than one method then all of them needs to come here in order to correct way
        working the code.
 
@@ -36,7 +38,7 @@ public class AbstractB extends AbstractASupperClass { // This is child class and
 
 
     public static void main(String[] args) {  // main method
-        AbstractB obj = new AbstractB(); // created obj of the class for calling them
+        ImplementAbstract obj = new ImplementAbstract(); // created obj of the class for calling them
         // by calling this method placeOrder method will also print since I put that inside of emailmessage method
       //  obj.emailMessage(); // calling my method.
         obj.placeOrder();
