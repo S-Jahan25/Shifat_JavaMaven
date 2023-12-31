@@ -9,6 +9,7 @@ public abstract class AbstractASupperClass { // class , Abstract class always ne
     // Abstract class cannot be instantiated.
     // they have 2 method. 1. abstract and 2. normal method
     // Abstract class can hold both abstract and non abstract method.
+     In the Abstract supper class should be abstract and whoever implement should be regular.
      */
 
     // these are variables
