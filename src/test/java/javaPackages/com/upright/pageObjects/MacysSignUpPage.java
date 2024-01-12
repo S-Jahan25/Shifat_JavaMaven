@@ -16,6 +16,9 @@ public class MacysSignUpPage {
 
     @Test
 
+
+
+
     public void browser() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\suboj\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver(); // opeing chrome
@@ -42,7 +45,12 @@ public class MacysSignUpPage {
         password.sendKeys("Subo@0325");
         Thread.sleep(1000);
 
-        WebElement element = driver.findElement(By.id("ca-profile-birth-month"));
+        // method over loading . OOP Concepts polymorphism. same method with differnet parameter. complie time
+
+
+
+
+       WebElement element = driver.findElement(By.id("ca-profile-birth-month"));
         Select select = new Select(element);
         select.selectByIndex(3);
         Thread.sleep(1000);

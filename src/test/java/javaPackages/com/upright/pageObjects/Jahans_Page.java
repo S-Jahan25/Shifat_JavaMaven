@@ -1,11 +1,13 @@
 package javaPackages.com.upright.pageObjects;
 
+import com.beust.ah.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class Jahans_Page {
@@ -20,25 +22,66 @@ public class Jahans_Page {
 
         driver.get("http://jahanprofile.click");
          Thread.sleep(2000);
-        driver.findElement(By.id("projectTool")).sendKeys("JIRA");
+    driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+    driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+    driver.manage().window().maximize();
 
-        Thread.sleep(1000);
-        driver.findElement(By.name("documentationTool")).sendKeys("Confluence");
+  Thread.sleep(2000);
 
-        Thread.sleep(1000);
-        driver.findElement(By.id("oopLanguage")).sendKeys("Java");
+    WebElement mode = driver.findElement(By.xpath("//img[@id = 'modeToggle']"));
+    mode.click();
 
-        Thread.sleep(1000);
-        driver.findElement(By.name("automationTool")).sendKeys("Selenium");
+    WebElement About = driver.findElement(By.linkText("About"));
+    About.click();
 
-        Thread.sleep(1000);
-        driver.findElement(By.id("apiTool")).sendKeys("Postman");
+    driver.navigate().back();
+   Thread.sleep(3000);
+    WebElement Experience = driver.findElement(By.linkText("Experience"));
+    Experience.click();
 
-        Thread.sleep(1000);
-        driver.findElement(By.name("backendTool")).sendKeys("Mysql");
 
-        Thread.sleep(1000);
-        driver.findElement(By.id("mobileTool")).sendKeys("Appium");
+    Thread.sleep(2000);
+
+    WebElement tool = driver.findElement(By.xpath("//input[@name = 'projectTool']"));
+    tool.sendKeys("JIRA");
+    Thread.sleep(2000);
+
+
+    WebElement tool2 = driver.findElement(By.xpath("//input[@name = 'documentationTool']"));
+    tool2.sendKeys("CONFLUENCE");
+
+    Thread.sleep(2000);
+
+    WebElement tool3 = driver.findElement(By.xpath("//input[@name = 'oopLanguage']"));
+    tool3.sendKeys("JAVA");
+    Thread.sleep(2000);
+
+
+    WebElement tool4 = driver.findElement(By.xpath("//input[@name = 'automationTool']"));
+    tool4.sendKeys("Selenium");
+
+    Thread.sleep(2000);
+
+    WebElement tool5 = driver.findElement(By.xpath("//input[@name = 'apiTool']"));
+    tool5.sendKeys("postman");
+
+    Thread.sleep(2000);
+
+    WebElement tool6 = driver.findElement(By.xpath("//input[@name = 'backendTool']"));
+    tool6.sendKeys("Mysql");
+    Thread.sleep(2000);
+
+
+    WebElement tool7 = driver.findElement(By.xpath("//input[@name = 'mobileTool']"));
+    tool7.sendKeys("appium");
+    Thread.sleep(2000);
+
+   /* WebElement getCV = driver.findElement(By.xpath("//button[@class = 'btn btn-color-2']"));
+    getCV.click();
+  */
+
+
+
 
         /*
            There are 2 type of xpath
@@ -47,30 +90,13 @@ public class Jahans_Page {
 
            To find with xpath: first inspect the elemet then cntrl F then type
          */
-         driver.findElement(By.xpath("/html/body/label[2]")).click();
 
 
-        Thread.sleep(1000);
-    driver.findElement(By.xpath("/html/body/label[4]")).click();
-
-    Thread.sleep(2000);
-    driver.findElement(By.xpath("/html/body/label[5]")).click();
 
 
-        Thread.sleep(1000);
-
-       driver.findElement(By.linkText("Facebook")).click();
-       driver.navigate().back();
-
-       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-          driver.findElement(By.linkText("Linkdin")).click();
 
 
-   // WebElement doctool = driver.findElement(By.name("documentationTool"));
-    //doctool.sendKeys();
-
-      driver.close();// driver.close will close the current browser
+      //driver.close();// driver.close will close the current browser
        //driver.quit(); // This will close all tabs / windows open by selenium. will close whole selenium session if its open 3 windows will close and clear background proccess
 
 
