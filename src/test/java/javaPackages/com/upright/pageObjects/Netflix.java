@@ -42,7 +42,7 @@ public class Netflix {
        enterEmail.sendKeys("subo0323@yahoo.com");
        Thread.sleep(3000);
 
-
+        System.out.println("Hello");
 
 
        WebElement clickSubmit = driver.findElement(By.xpath("/html/body/div/div/div/div/div/div/div/div/div/div/form/div/button"));
