@@ -114,7 +114,7 @@ public class UprightForumSignupPage2 {
       System.out.println(alertText);
 
       //   Assert is for condition validation check if the story requirement meets or not with the expected result.
-        Assert.assertEquals(alertText,"Username is already exist");
+        Assert.assertEquals(alertText,"Security Key is invalid");
 
 
        //  instead of assert I can use if else statements to validate the condition
